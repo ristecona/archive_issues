@@ -1,0 +1,45 @@
+<odoo>
+  <record id="archive_issues_form" model="ir.ui.view">
+      <field name="name">archive.issues.form</field>
+      <field name="model">base.issue.archive.automatic.wizard</field>
+      <field name="arch" type="xml">
+          <form string="Archive Issues">
+              <group string="Select Issues">
+                  <field name="issue_ids" nolabel="1">
+                      <tree>
+                          <field name="create_date"/>
+                          <field name="name"/>
+                          <field name="id"/>
+                      </tree>
+                  </field>
+              </group>
+              <footer>
+                  <button name="action_archive" type="object" string="Archive" class="btn-primary"/>
+                  <button string="Cancel" class="btn-default" special="cancel"/>
+              </footer>
+          </form>
+      </field>
+  </record>
+
+
+  <record id="archive_issues_act" model="ir.actions.act_window">
+      <field name="name">Archive Issues</field>
+      <field name="res_model">base.issue.archive.automatic.wizard</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="archive_issues_form"/>
+      <field name="target">new</field>
+  </record>
+
+  <act_window
+      id="action_archive_issues"
+      name="Archive Issues"
+      multi="True"
+      key2="client_action_multi"
+      res_model="base.issue.archive.automatic.wizard"
+      src_model="project.issue"
+      view_mode="form"
+      target="new"
+      view_type="form"/>
+
+</odoo>
