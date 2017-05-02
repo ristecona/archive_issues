@@ -9,6 +9,9 @@
     'description': """
         Archive Issues using list view in odoo
     """,
+    
+    'price': 69.99,
+    'currency': 'EUR',
 
 
     'images': ['static/description/banner.jpg'],
