@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import http
+from openerp import http
 
 # class EbArchiveTasks(http.Controller):
 #     @http.route('/eb_archive_tasks/eb_archive_tasks/', auth='public')
