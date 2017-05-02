@@ -14,7 +14,7 @@
     'currency': 'EUR',
 
 
-    'images': ['static/description/banner.jpg'],
+    'images': ['static/description/banner.png'],
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
