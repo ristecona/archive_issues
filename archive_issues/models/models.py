@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
-from odoo.exceptions import UserError, ValidationError
+from openerp import models, fields, api
+from openerp.exceptions import UserError, ValidationError
 
 class ArchiveIssuesLine(models.TransientModel):
 
