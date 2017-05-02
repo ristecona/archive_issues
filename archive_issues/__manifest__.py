@@ -5,6 +5,8 @@
 
     'summary': """
         Archive Multiple Issues using list view in odoo""",
+    'price': 69.99,
+    'currency': 'EUR',
 
     'description': """
         Archive Issues using list view in odoo
